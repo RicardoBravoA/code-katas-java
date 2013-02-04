@@ -7,7 +7,7 @@ package com.acme.trees;
  * the longest path.
  *
  */
-public class HeightBinaryTree {
+public class RecursiveBinaryTreeHeight {
 
 	public int height(Node root) {
 		if (root == null) {

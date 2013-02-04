@@ -5,9 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class HeightBinaryTreeTest {
+public class RecursiveBinaryTreeHeightTest {
 
-	HeightBinaryTree height;
+	RecursiveBinaryTreeHeight height;
 
 	Node n1;
 	Node n2;
@@ -16,7 +16,7 @@ public class HeightBinaryTreeTest {
 
 	@Before
 	public void setup() {
-		height = new HeightBinaryTree();
+		height = new RecursiveBinaryTreeHeight();
 		n1 = new Node(1);
 		n2 = new Node(2);
 		n3 = new Node(3);
