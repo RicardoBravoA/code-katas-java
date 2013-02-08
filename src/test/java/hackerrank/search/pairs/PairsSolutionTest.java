@@ -7,24 +7,33 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 
+import org.junit.Before;
 import org.junit.Test;
 
-public class SolutionTest {
+public class PairsSolutionTest {
 
-	@Test
-	public void test() throws IOException {
+	private String input;
+	private String expectedOutput;
 
+	@Before
+	public void setup() {
 		//@formatter:off
-		String input =
+		this.input =
 			"5 2\n" +
 			"1 5 3 4 2";
 		//@formatter:on
 
 		//@formatter:off
-		String expectedOutput =
+		this.expectedOutput =
 			"3\n";
 		//@formatter:on
+	}
 
+	@Test
+	public void test() throws IOException {
+
+		// prepare i/o
+		PrintStream originalStdout = System.out;
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream ps = new PrintStream(baos);
 
@@ -41,5 +50,8 @@ public class SolutionTest {
 		// check results
 		assertEquals(expectedOutput, output);
 
+		// set default system.out
+		System.setOut(originalStdout);
 	}
+
 }
