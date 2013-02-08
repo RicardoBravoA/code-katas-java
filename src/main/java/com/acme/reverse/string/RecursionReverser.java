@@ -4,6 +4,7 @@ import com.acme.reverse.api.Reverser;
 
 public class RecursionReverser implements Reverser<String> {
 
+	@Override
 	public String reverse(final String str) {
 		if ((null == str) || (str.length() <= 1)) {
 			return str;
