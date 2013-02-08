@@ -7,17 +7,17 @@ public class BinaryTreeDiameter {
 			return 0;
 		}
 
-		int rootDiameter = height(root.left) + height(root.right) + 1;
-
-		int leftDiameter = diameter(root.left);
-		int rightDiameter = diameter(root.right);
-
-		return Math.max(rootDiameter, Math.max(leftDiameter, rightDiameter));
+		return Math.max(Math.max(diameter(root.left), diameter(root.right)),
+				height(root.left) + height(root.right) + 1);
 	}
 
 	private int height(Node root) {
 		if (root == null) {
 			return 0;
+		}
+
+		if (root.left == null && root.right == null) {
+			return 1;
 		}
 
 		return Math.max(height(root.left), height(root.right)) + 1;
