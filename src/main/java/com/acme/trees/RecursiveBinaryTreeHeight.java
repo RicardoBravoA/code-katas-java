@@ -18,7 +18,6 @@ public class RecursiveBinaryTreeHeight {
 			return 0;
 		}
 
-		return 1 + Math.max(height(root.left), height(root.right));
-
+		return Math.max(height(root.left), height(root.right)) + 1;
 	}
 }
