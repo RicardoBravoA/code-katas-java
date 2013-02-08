@@ -6,6 +6,7 @@ import java.util.List;
 
 public class IterativeNoNumbersBeyondSquareRootPrime implements Prime {
 
+	@Override
 	public List<Integer> find(final int upperBound) {
 		if (upperBound <= 1) {
 			return Collections.emptyList();
@@ -28,13 +29,12 @@ public class IterativeNoNumbersBeyondSquareRootPrime implements Prime {
 	}
 
 	boolean isPrime(final int n) {
-		// check if n is a multiple of 2
 		if (n % 2 == 0) {
 			return false;
 		}
 
-		// ignore all numbers beyond square root
-		for (int i = 3; i * i < n; i += 2) {
+		int limit = (int) Math.sqrt(n);
+		for (int i = 3; i <= limit; i += 2) {
 			if (n % i == 0) {
 				return false;
 			}
