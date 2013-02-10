@@ -4,6 +4,8 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
+import acme.sort.Sort;
+
 public class AscendingBubbleSortTest {
 
 	@Test

@@ -1,4 +1,4 @@
-package acme.sort.bubble;
+package acme.sort;
 
 public interface Sort {
 

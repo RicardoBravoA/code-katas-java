@@ -1,5 +1,7 @@
 package acme.sort.bubble;
 
+import acme.sort.Sort;
+
 public class AscendingBubbleSort implements Sort {
 
 	/*
