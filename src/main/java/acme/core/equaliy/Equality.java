@@ -3,7 +3,6 @@ package acme.core.equaliy;
 public class Equality {
 
 	public static void main(String[] args) {
-		System.out.println(1 == 1); // true
 		System.out.println(new Integer(1) == new Integer(1)); // false
 		System.out.println(new Integer(1).equals(new Integer(1))); // true
 		System.out.println("FOO" == "FOO"); // true
