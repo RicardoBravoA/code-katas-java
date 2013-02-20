@@ -7,7 +7,6 @@ public class Node {
 
 	public Node(final String value) {
 		this.value = value;
-		this.next = next;
 	}
 
 }
