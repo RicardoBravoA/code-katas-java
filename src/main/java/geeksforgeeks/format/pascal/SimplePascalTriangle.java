@@ -1,7 +1,11 @@
-package acme.format.pascal;
+package geeksforgeeks.format.pascal;
 
 import java.util.Scanner;
 
+/**
+ * O(n^3) time complexity
+ *
+ */
 public class SimplePascalTriangle {
 
 	public static void main(String[] args) {

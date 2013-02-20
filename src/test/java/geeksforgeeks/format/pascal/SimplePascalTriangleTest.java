@@ -1,6 +1,8 @@
-package acme.format.pascal;
+package geeksforgeeks.format.pascal;
 
 import static org.junit.Assert.assertEquals;
+
+import geeksforgeeks.format.pascal.SimplePascalTriangle;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
