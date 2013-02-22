@@ -13,13 +13,14 @@ public class TriangleSolution {
 		// logic
 		int maxLength = (int) (Math.pow(2, height - 1) - 1);
 		for (int i = 0; i < height; i++) {
-			for (int j = 0; j < maxLength / 2 - i; j++) {
+			int j = 0;
+			for (j = 0; j < maxLength / 2 - i; j++) {
 				System.out.print(" ");
 			}
-			for (int k = 1; k <= 2 * (i + 1) - 1; k++) {
+			for (int k = 1; k <= 2 * i + 1; k++) {
 				System.out.print("*");
 			}
-			System.out.println("");
+			System.out.println();
 		}
 
 		// cleanup
