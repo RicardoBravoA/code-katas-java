@@ -1,4 +1,4 @@
-package acme.core.equaliy;
+package acme.core.equality;
 
 public class Equality {
 
