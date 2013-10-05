@@ -29,15 +29,15 @@ public class SimplePascalTriangle {
 	}
 
 	private static int binomialCoeff(int n, int k) {
-		int res = 1;
+		int result = 1;
 		if (k > n - k) {
 			k = n - k;
 		}
 		for (int i = 0; i < k; ++i) {
-			res *= (n - i);
-			res /= (i + 1);
+			result *= (n - i);
+			result /= (i + 1);
 		}
-		return res;
+		return result;
 	}
 
 }
