@@ -24,12 +24,13 @@ public class NextHighestLongSameDigits {
 	public long find(long number) {
 
 		final String s = String.valueOf(number);
+		final int length = s.length();
 
 		int min = -1;
 		int minPos = -1;
-		for (int i = 1; i < s.length(); i++) {
-			int right = Character.getNumericValue(s.charAt(i));
+		for (int i = 1; i < length; i++) {
 			int left = Character.getNumericValue(s.charAt(i - 1));
+			int right = Character.getNumericValue(s.charAt(i));
 			if (right < left) {
 				minPos = i;
 				min = right;
@@ -43,7 +44,7 @@ public class NextHighestLongSameDigits {
 
 		int minNext = 9;
 		int minNextPos = -1;
-		for (int i = minPos + 1; i < s.length(); i++) {
+		for (int i = minPos + 1; i < length; i++) {
 			int current = Character.getNumericValue(s.charAt(i));
 			if (current > min && current <= minNext) {
 				minNext = current;
@@ -57,7 +58,7 @@ public class NextHighestLongSameDigits {
 
 		char[] charArray = sb.substring(minPos + 1).toCharArray();
 		Arrays.sort(charArray);
-		sb.replace(minPos + 1, s.length(), new String(charArray));
+		sb.replace(minPos + 1, length, new String(charArray));
 
 		return Long.valueOf(sb.toString());
 	}
