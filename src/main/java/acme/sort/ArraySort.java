@@ -1,6 +1,6 @@
 package acme.sort;
 
-public interface Sort {
+public interface ArraySort {
 
 	public int[] sort(int[] n);
 

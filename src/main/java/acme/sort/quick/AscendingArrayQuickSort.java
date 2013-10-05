@@ -1,8 +1,8 @@
 package acme.sort.quick;
 
-import acme.sort.Sort;
+import acme.sort.ArraySort;
 
-public class AscendingQuickSort implements Sort {
+public class AscendingArrayQuickSort implements ArraySort {
 	private int[] n;
 
 	@Override

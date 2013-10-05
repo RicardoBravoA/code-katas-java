@@ -1,16 +1,16 @@
-package acme.sort.bubble;
+package acme.sort.quick;
 
 import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
-import acme.sort.Sort;
+import acme.sort.ArraySort;
 
-public class AscendingBubbleSortTest {
+public class AscendingArrayQuickSortTest {
 
 	@Test
 	public void sort() {
-		Sort sort = new AscendingBubbleSort();
+		ArraySort sort = new AscendingArrayQuickSort();
 		int[] in = new int[] { 5, 8, 3, 7, 6, 2 };
 		int[] expected = new int[] { 2, 3, 5, 6, 7, 8 };
 

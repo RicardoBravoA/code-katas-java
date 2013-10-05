@@ -4,13 +4,13 @@ import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
-import acme.sort.Sort;
+import acme.sort.ArraySort;
 
-public class DescendingBubbleSortTest {
+public class DescendingArrayBubbleSortTest {
 
 	@Test
 	public void sort() {
-		Sort sort = new DescendingBubbleSort();
+		ArraySort sort = new DescendingArrayBubbleSort();
 		int[] in = new int[] { 5, 8, 3, 7, 6, 2 };
 		int[] expected = new int[] { 8, 7, 6, 5, 3, 2 };
 
