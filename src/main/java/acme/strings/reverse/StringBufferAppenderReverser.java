@@ -4,6 +4,7 @@ import acme.api.Reverser;
 
 public class StringBufferAppenderReverser implements Reverser<String> {
 
+	@Override
 	public String reverse(final String str) {
 		if ((null == str) || (str.length() <= 1)) {
 			return str;
