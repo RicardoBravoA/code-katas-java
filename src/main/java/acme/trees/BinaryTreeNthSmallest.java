@@ -29,11 +29,11 @@ public class BinaryTreeNthSmallest {
 
 			sizeOfLeftSubtree = elementCount(root.left);
 
-			if (sizeOfLeftSubtree + 1 == count) {
+			if (sizeOfLeftSubtree == count -1) {
 				return root.value;
 			} else if (sizeOfLeftSubtree < count) {
 				root = root.right;
-				count -= sizeOfLeftSubtree + 1;
+				count = count - (sizeOfLeftSubtree + 1);
 			} else {
 				root = root.left;
 			}
