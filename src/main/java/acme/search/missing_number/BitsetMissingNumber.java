@@ -3,6 +3,7 @@ package acme.search.missing_number;
 
 public class BitsetMissingNumber implements MissingNumber {
 
+	@Override
 	public int find(final int[] hay, final int n) {
 		final boolean[] bitset = new boolean[n];
 		for (final int i : hay) {
