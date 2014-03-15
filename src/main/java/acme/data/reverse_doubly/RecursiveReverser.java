@@ -4,6 +4,7 @@ import acme.api.Reverser2;
 
 public class RecursiveReverser implements Reverser2<Node> {
 
+	@Override
 	public Node reverse(final Node one, final Node tail) {
 		if (one == null || one.next == null || one.next == tail) {
 			return one;
@@ -18,8 +19,6 @@ public class RecursiveReverser implements Reverser2<Node> {
 		two.next = one;
 
 		final Node reverseRest = reverse(one, tail);
-
-
 
 		return reverseRest;
 	}
