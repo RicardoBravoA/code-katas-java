@@ -1,10 +1,11 @@
-package acme.sort.bubble;
+package acme.sort;
 
 import static org.junit.Assert.assertArrayEquals;
 
 import org.junit.Test;
 
 import acme.sort.ArraySort;
+import acme.sort.DescendingArrayBubbleSort;
 
 public class DescendingArrayBubbleSortTest {
 

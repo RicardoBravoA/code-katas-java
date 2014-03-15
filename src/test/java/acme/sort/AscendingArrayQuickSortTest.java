@@ -1,8 +1,8 @@
-package acme.sort.quick;
+package acme.sort;
 
 import org.junit.Before;
 
-import acme.sort.AbstractAscendingArraySortTest;
+import acme.sort.AscendingArrayQuickSort;
 
 public class AscendingArrayQuickSortTest extends AbstractAscendingArraySortTest {
 

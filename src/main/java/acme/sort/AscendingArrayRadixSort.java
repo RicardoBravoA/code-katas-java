@@ -1,8 +1,6 @@
-package acme.sort.radix;
+package acme.sort;
 
 import java.util.ArrayList;
-
-import acme.sort.ArraySort;
 
 public class AscendingArrayRadixSort implements ArraySort {
 

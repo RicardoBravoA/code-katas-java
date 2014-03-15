@@ -1,6 +1,5 @@
-package acme.sort.bubble;
+package acme.sort;
 
-import acme.sort.ArraySort;
 
 public class DescendingArrayBubbleSort implements ArraySort {
 

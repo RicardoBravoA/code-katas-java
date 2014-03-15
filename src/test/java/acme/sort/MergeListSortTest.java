@@ -1,4 +1,4 @@
-package acme.sort.merge;
+package acme.sort;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,6 +8,7 @@ import java.util.List;
 import org.junit.Test;
 
 import acme.sort.ListSort;
+import acme.sort.MergeListSort;
 
 public class MergeListSortTest {
 

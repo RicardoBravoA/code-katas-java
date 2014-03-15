@@ -1,9 +1,7 @@
-package acme.sort.merge;
+package acme.sort;
 
 import java.util.LinkedList;
 import java.util.List;
-
-import acme.sort.ListSort;
 
 public class MergeListSort implements ListSort {
 

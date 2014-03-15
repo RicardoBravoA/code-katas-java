@@ -1,8 +1,8 @@
-package acme.sort.radix;
+package acme.sort;
 
 import org.junit.Before;
 
-import acme.sort.AbstractAscendingArraySortTest;
+import acme.sort.AscendingArrayRadixSort;
 
 public class AscendingArrayRadixSortTest extends AbstractAscendingArraySortTest {
 

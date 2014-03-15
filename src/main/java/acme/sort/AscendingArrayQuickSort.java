@@ -1,8 +1,7 @@
-package acme.sort.quick;
+package acme.sort;
 
-import acme.sort.ArraySort;
 
-public class DescendingArrayQuickSort implements ArraySort {
+public class AscendingArrayQuickSort implements ArraySort {
 	private int[] n;
 
 	@Override
@@ -22,14 +21,14 @@ public class DescendingArrayQuickSort implements ArraySort {
 		int pivot = n[low + (high - low) / 2];
 
 		while (i <= j) {
-			while (n[i] > pivot) {
+			while (n[i] < pivot) {
 				i++;
 			}
-			while (n[j] < pivot) {
+			while (n[j] > pivot) {
 				j--;
 			}
 
-			if (j >= i) {
+			if (i <= j) {
 				swap(i, j);
 				i++;
 				j--;
