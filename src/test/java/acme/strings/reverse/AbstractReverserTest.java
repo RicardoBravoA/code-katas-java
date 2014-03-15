@@ -29,8 +29,13 @@ public abstract class AbstractReverserTest {
 	}
 
 	@Test
-	public void evenCharacters() {
-		reverse("ab", reverser);
+	public void fourCharacters() {
+		reverse("abcd", reverser);
+	}
+
+	@Test
+	public void twoCharacters() {
+		reverse("abcd", reverser);
 	}
 
 	@Test
