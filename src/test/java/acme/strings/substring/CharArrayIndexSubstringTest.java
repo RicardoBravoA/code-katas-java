@@ -15,6 +15,6 @@ public class CharArrayIndexSubstringTest {
 	@Test
 	public void needleDoesNotExist() {
 		CharArrayIndexSubstring finder = new CharArrayIndexSubstring();
-		assertEquals(1, finder.find("hallo", "foo"));
+		assertEquals(-1, finder.find("hallo", "foo"));
 	}
 }
